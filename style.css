@@ -209,39 +209,40 @@ body {
 }
 /*-----------------------assignment ----------------------------------*/
 /* Hero Buttons Section - Card Container */
+/* Hero Buttons Section - Full Width */
 .hero-buttons-section {
-    background-color: #0f111b; /* dark bluish card */
-    padding: 60px 30px;        /* more padding inside the card */
+    padding: 60px 5%;               /* space around */
+    background: linear-gradient(120deg, #1e2a5a, #2563eb, #1e2a5a); /* bluish gradient */
     border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-    margin: 50px auto;         /* space from other sections */
-    max-width: 1200px;         /* bigger container */
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+    margin: 50px auto;             /* spacing from other sections */
+    max-width: 1200px;             /* limit container width */
 }
 
 /* Buttons Grid */
 .hero-buttons-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* larger min width */
-    gap: 35px;
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 3 buttons fit wide screens */
+    gap: 40px;
+    justify-items: stretch;         /* buttons fill grid width */
+    align-items: stretch;
 }
 
-/* Individual Button Styles */
+/* Individual Buttons */
 .hero-btn {
-    display: inline-block;
-    padding: 35px 40px;        /* increase height and width */
-    width: 100%;
-    max-width: 300px;           /* bigger buttons */
-    background: linear-gradient(145deg, #1e2a5a, #2563eb); /* bluish gradient */
-    color: #ffffff;
-    font-size: 20px;            /* slightly larger font */
-    font-weight: 600;
-    text-align: center;
-    border-radius: 15px;        /* slightly bigger rounding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;            /* taller buttons */
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(145deg, #1e2a5a, #2563eb); /* gradient */
     text-decoration: none;
-    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
 }
 
 /* Hover Effect */
@@ -252,16 +253,15 @@ body {
     cursor: pointer;
 }
 
-/* Responsive Adjustments */
+/* Responsive for Mobile */
 @media (max-width: 768px) {
     .hero-buttons-container {
-        grid-template-columns: 1fr;  /* single column on mobile */
+        grid-template-columns: 1fr;  /* stack vertically */
     }
 
     .hero-btn {
-        max-width: 90%;              /* fill more space on small screens */
-        padding: 30px 20px;          /* adjust padding */
-        font-size: 18px;
+        font-size: 20px;
+        padding: 40px 20px;         /* slightly smaller on mobile */
     }
 }
 /*--------------------- CONTACT --------------------*/
@@ -314,6 +314,7 @@ body {
         gap: 20px;
     }
 }
+
 
 
 

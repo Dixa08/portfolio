@@ -118,29 +118,31 @@ body {
 }
 
 .project-card {
-    background: #1e2a5a; /* lighter, softer blue */
-    color: #e0e0e0;       /* light gray text for readability */
-    padding: 25px;
+    background: #273468; /* slightly softer, elegant blue */
+    color: #f0f0f0;      /* very light text for readability */
+    padding: 25px 20px;
     border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+    background: #314182; /* slightly brighter on hover */
 }
 
 .project-card h4 {
-    margin-bottom: 12px;
-    font-size: 18px;
-    color: #a8c5ff; /* softer heading color */
+    margin-bottom: 14px;
+    font-size: 20px;
+    color: #a8c5ff; /* soft, readable heading color */
+    font-weight: 600;
 }
 
 .project-card p {
     font-size: 15px;
-    line-height: 1.5;
-    color: #e0e0e0; /* lighter paragraph color */
+    line-height: 1.6;
+    color: #e0e0e0; /* paragraph text readable on dark background */
 }
 
 /*--------------------- SECTIONS --------------------*/
@@ -256,4 +258,5 @@ body {
         gap: 20px;
     }
 }
+
 

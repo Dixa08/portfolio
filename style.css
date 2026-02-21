@@ -264,7 +264,7 @@ body {
         padding: 60px 20px;
     }
 }
-/*--------------------- CONTACT --------------------*/
+/*--------------------- CONTACT --------------------
 .gmail-box, .linkedin-box {
     display: inline-block;
     padding: 12px 20px;
@@ -289,6 +289,34 @@ body {
 .linkedin-box:hover {
     background-color: #004182;
 }
+
+*/
+
+/*--------------------- CONTACT BUTTONS --------------------*/
+.contact-btn {
+    display: inline-block;
+    padding: 12px 22px;        /* enough padding for readability */
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5px;
+    font-size: 16px;
+}
+
+/* Specific button colors */
+.gmail-box { background-color: #D14836; }
+.gmail-box:hover { background-color: #a23326; transform: translateY(-2px); }
+
+.linkedin-box { background-color: #0A66C2; }
+.linkedin-box:hover { background-color: #004182; transform: translateY(-2px); }
+
+.github-box { background-color: #24292F; }
+.github-box:hover { background-color: #1b1f23; transform: translateY(-2px); }
+
+
+
 
 /*--------------------- RESPONSIVE --------------------*/
 @media (max-width: 768px) {
@@ -325,6 +353,7 @@ footer {
     font-weight: 500;             /* optional: makes it a bit bolder */
     width: 100%;                  /* ensures full-width footer */
 }
+
 
 
 

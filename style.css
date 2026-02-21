@@ -241,6 +241,25 @@ footer {
 <!-----------------------------------education------------------------------------------------------------------------------>
 
 /* ===== EDUCATION SECTION ===== */
+/* Center content inside all .section */
+.section {
+    padding: 60px 10%;
+    text-align: center;  /* centers headings and paragraphs */
+}
+
+/* Optional: make the <p> slightly nicer */
+.section p {
+    font-size: 18px;
+    margin: 8px 0;
+    line-height: 1.6;
+    color: #13212e;
+}
+
+/* Optional: highlight degree */
+.section p strong {
+    color: #2563eb;
+    font-weight: 600;
+}
 .education-section {
     padding: 60px 20px;
     background: #f5f7fa;
@@ -285,6 +304,7 @@ footer {
     color: #777;
     font-size: 14px;
 }
+
 
 
 

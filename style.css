@@ -16,20 +16,18 @@ body {
 /* ===== INTRO VIDEO SECTION ===== */
 .video-intro {
     text-align: center;
-    padding: 40px 20px;   /* space around video */
+    padding: 40px 20px;
     margin-top: 20px;
 }
 
-/* Video size control */
 .video-intro video {
-    width: 100%;          /* responsive */
-    max-width: 750px;     /* max width on large screens */
+    width: 100%;
+    max-width: 750px;
     height: auto;
-    border-radius: 12px;  /* rounded corners */
+    border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-/* Speed control styling */
 .video-controls {
     margin-top: 12px;
     font-size: 14px;
@@ -236,5 +234,6 @@ footer {
   margin: 15px 0;
   border-radius: 10px;
 }
+
 
 

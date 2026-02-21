@@ -217,4 +217,11 @@ footer {
 .assignment-card a:hover {
     opacity: 0.9;
 }
+<!----------------------------learnings------------------------------------------------------------------------------------>
+.lab-card {
+  background: #f4f6f8;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+}
 

@@ -208,12 +208,12 @@ body {
     font-size: 14px;
 }
 /*-----------------------assignment ----------------------------------*/
-/* Hero Buttons Section - White/Grey Theme */
+/* Hero Buttons Section - Outer Light Grey */
 .hero-buttons-section {
     padding: 60px 5%;  
-    background-color: #f5f7fa; /* same soft light grey as Education */
+    background-color: #f5f7fa; /* soft light grey outer section */
     border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08); /* subtle shadow */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
     margin: 50px auto;
     max-width: 1200px;
     text-align: center;
@@ -228,8 +228,7 @@ body {
     align-items: stretch;
 }
 
-/* Individual Buttons */
-/* Individual Buttons */
+/* Individual Blue Boxes */
 .hero-btn {
     display: flex;
     justify-content: center;
@@ -237,12 +236,12 @@ body {
     padding: 50px 20px;           
     font-size: 22px;
     font-weight: 700;
-    color: #ffffff; /* White text for contrast on blue */
-    background-color: #3b82f6; /* blue button, matches theme */
+    color: #ffffff; /* white text for contrast */
+    background-color: #1e3a8a; /* blue themed box */
     text-decoration: none;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.1); /* subtle shadow */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
     transition: all 0.3s ease;
 }
 
@@ -250,7 +249,7 @@ body {
 .hero-btn:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 28px rgba(0,0,0,0.15);
-    background-color: #2563eb; /* slightly darker blue on hover */
+    background-color: #2563eb; /* slightly lighter blue on hover */
     cursor: pointer;
 }
 
@@ -315,6 +314,7 @@ body {
         gap: 20px;
     }
 }
+
 
 
 

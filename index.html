@@ -8,7 +8,27 @@
 </head>
 
 <body>
+<!-- ===== INTRO VIDEO ===== -->
+<section class="video-intro">
 
+    <video id="introVideo" autoplay muted loop controls>
+        <source src=".mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Speed control -->
+    <div class="video-controls">
+        <label>Speed:</label>
+        <select onchange="changeSpeed(this.value)">
+            <option value="0.5">0.5x</option>
+            <option value="1" selected>1x</option>
+            <option value="1.25">1.25x</option>
+            <option value="1.5">1.5x</option>
+            <option value="2">2x</option>
+        </select>
+    </div>
+
+</section>
 <!-- ===== HERO ===== -->
 <header class="hero">
     <div class="hero-text">
@@ -130,6 +150,7 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

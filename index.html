@@ -8,7 +8,8 @@
 </head>
 
 <body>
-<======hero================================>
+
+<!-- ===== HERO ===== -->
 <header class="hero">
 
     <div class="hero-text">
@@ -22,23 +23,13 @@
     </div>
 
 </header>
-    
 
-<div class="hero-image">
-<img src="https://Dixa08.github.io/portfolio/images/profile_photo_dixa.png" alt="Dixa Rawat">    </div>
-</header>
-<script>
-    
-function changeSpeed(speed) {
-    document.getElementById("introVideo").playbackRate = speed;
-}
-</script>
-<!-- ===== INTRO VIDEO ===== -->
+
 <!-- ===== INTRO VIDEO ===== -->
 <section class="video-intro">
 
     <video id="introVideo" controls autoplay muted loop>
-        <source src="images/DIXA_COMPRESSED_INTRO VIDEO (1).mp4.mp4" type="video/mp4">
+        <source src="images/intro.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
@@ -55,10 +46,9 @@ function changeSpeed(speed) {
 
 </section>
 
-</section>
+
 <!-- ===== SHORT INTRO ===== -->
 <section class="section">
-    
     <p>
         Hi, I’m <strong>Dixa</strong>, a B.Tech CSE student specializing in <strong>AI & ML</strong> at Graphic Era Hill University, Dehradun. 
         I’m passionate about Artificial Intelligence, Deep Learning, GIS, and Remote Sensing, and I enjoy building technology that solves real-world problems.
@@ -76,10 +66,11 @@ function changeSpeed(speed) {
 
 
 <!-- ===== PROJECTS ===== -->
- <section class="section light" id="projects">
+<section class="section light" id="projects">
     <h2>Academic & Personal Projects</h2>
 
     <div class="projects">
+
         <div class="project-card">
             <h4>Health Tracking Application</h4>
             <p>
@@ -99,31 +90,31 @@ function changeSpeed(speed) {
         <div class="project-card">
             <h4>Online Examination System</h4>
             <p>
-                Developed a web-based examination platform with secure login and
-                structured question management.
+                Developed a web-based examination platform with secure login and structured question management.
             </p>
         </div>
+
         <div class="project-card">
-    <h4>Golf Cart Transformation into Grafia EV</h4>
-    <p>
-        Worked under the Mechanical EV Transformation project to convert a standard golf cart 
-        into an electric vehicle (Grafia EV). Learned fundamentals of EV systems, mechanical 
-        design adaptation, and integration of sustainable technologies.
-    </p>
-</div>
+            <h4>Golf Cart Transformation into Grafia EV</h4>
+            <p>
+                Worked under the Mechanical EV Transformation project to convert a standard golf cart 
+                into an electric vehicle (Grafia EV). Learned fundamentals of EV systems and sustainable technologies.
+            </p>
         </div>
+
     </div>
 </section>
+
 
 <!-- ===== EDUCATION ===== -->
 <section class="section">
     <h2>Education</h2>
     <p><strong>B.Tech in Computer Science Engineering (AI/ML)</strong></p>
     <p>2nd Year Undergraduate</p>
-
 </section>
 
 
+<!-- ===== NAV BUTTONS ===== -->
 <div class="hero-buttons">
     <button onclick="goToPage('assignment.html')">Assignments</button>
     <button onclick="goToPage('gallery.html')">Gallery</button>
@@ -131,47 +122,38 @@ function changeSpeed(speed) {
 </div>
 
 
-
- <!-- ===== CONTACT ===== -->
+<!-- ===== CONTACT ===== -->
 <section class="section light" id="contact">
     <h2>Contact</h2>
+
     <p>
-    <a href="mailto:dixarawat2024@gmail.com" class="gmail-box">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" 
-             alt="Gmail" style="width:18px; height:18px; vertical-align:middle; margin-right:8px; filter: invert(1);">
-        Email Me
-     </a>
+        <a href="mailto:dixarawat2024@gmail.com" class="gmail-box">
+            Email Me
+        </a>
     </p>
-    <!-- LinkedIn Button -->
+
     <p>
         <a href="https://www.linkedin.com/in/dixa" target="_blank" class="linkedin-box">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" 
-         alt="LinkedIn" style="width:18px; height:18px; vertical-align:middle; margin-right:8px;">
-    CONNECT HERE
-</a>
+            CONNECT HERE
+        </a>
     </p>
+
 </section>
 
 
-
 <footer>
-    © 2025 Dixa  | Aspiring Software Engineer
+    © 2025 Dixa | Aspiring Software Engineer
 </footer>
 
+
+<!-- ===== JS ===== -->
+<script>
+function changeSpeed(speed) {
+    document.getElementById("introVideo").playbackRate = speed;
+}
+</script>
+
 <script src="script.js"></script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-

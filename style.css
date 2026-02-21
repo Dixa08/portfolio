@@ -208,32 +208,48 @@ body {
     font-size: 14px;
 }
 /*-----------------------assignment ----------------------------------*/
-
-.hero-buttons {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 40px;
-    margin-top: 30px;
-    justify-items: center; /* center the buttons */
+/* Hero Buttons Section */
+.hero-buttons-section {
+    background-color: #0f111b; /* dark background for contrast */
+    padding: 50px 10%;         /* space around the box */
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    margin: 50px auto;         /* space from other sections */
+    max-width: 1000px;         /* keeps it centered and not too wide */
 }
 
+/* Container for buttons grid */
+.hero-buttons-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Individual Buttons */
 .hero-btn {
     display: inline-block;
-    padding: 40px 20px;
-    background-color: #141e36;
-    color: white;
-    border-radius: 10px;
+    padding: 25px 30px;
+    width: 100%;
+    max-width: 250px;
+    background: linear-gradient(145deg, #1e2a5a, #2563eb); /* bluish gradient */
+    color: #ffffff;
+    font-size: 18px;
     font-weight: 600;
     text-decoration: none;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    transition: all 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
+/* Hover Effect */
 .hero-btn:hover {
-    transform: translateY(-4px);
-    background-color: #2563eb;
-    box-shadow: 0 6px 14px rgba(62, 45, 45, 0.25);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+    background: linear-gradient(145deg, #2563eb, #1e2a5a);
 }
 
 
@@ -287,6 +303,7 @@ body {
         gap: 20px;
     }
 }
+
 
 
 

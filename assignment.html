@@ -1,154 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Assignments | Dixa | ML-2 | ROLL NO:28 | University_ROLL_NO:2419448</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: "Segoe UI", Arial, sans-serif;
-            background-color: #f5f7fa;
-            color: #13212e;
-        }
+  <meta charset="UTF-8">
+  <title>Assignments | Dixa | ML-2 | Roll No:28</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- CSS Styling -->
+  <style>
+    /* Reset & Body */
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family:"Segoe UI",Arial,sans-serif; background:#f5f7fa; color:#13212e; }
 
-        .section {
-            padding: 60px 10%;
-            text-align: center;
-        }
+    /* Section */
+    .section { padding: 60px 10%; text-align: center; }
+    .section h2 { font-size: 36px; margin-bottom: 20px; color: #1a3c8b; }
+    .section p { font-size: 18px; margin-bottom: 40px; color: #444; }
 
-        .section h2 {
-            font-size: 32px;
-            margin-bottom: 15px;
-            color: #222;
-        }
+    /* Assignments Grid */
+    .assignment-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      justify-items: center;
+      align-items: stretch;
+    }
 
-        .section p {
-            font-size: 16px;
-            margin-bottom: 40px;
-            color: #555;
-        }
+    /* Assignment Card */
+    .assignment-card {
+      background: linear-gradient(145deg, #cce0ff, #99c2ff);
+      color: #13212e;
+      padding: 25px 20px;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+      width: 100%;
+      max-width: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
 
-        /* Assignment Cards Grid */
-        .assignment-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            justify-items: center;
-        }
+    .assignment-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+      background: linear-gradient(145deg, #99c2ff, #66a3ff);
+      cursor: pointer;
+    }
 
-        .assignment-card {
-            background-color: #ffffff;
-            padding: 30px 20px;
-            border-radius: 12px;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-            width: 100%;
-            max-width: 350px;
-        }
+    .assignment-card h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+      font-weight: 700;
+      color: #1a3c8b;
+    }
 
-        .assignment-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 12px 28px rgba(0,0,0,0.15);
-        }
+    .assignment-card p {
+      font-size: 16px;
+      margin-bottom: 18px;
+      line-height: 1.5;
+    }
 
-        .assignment-card h3 {
-            margin-bottom: 10px;
-            color: #1a73e8;
-        }
+    .assignment-card a {
+      padding: 10px 18px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: background 0.3s, transform 0.3s;
+      display: inline-block;
+    }
 
-        .assignment-card p {
-            margin-bottom: 15px;
-            font-size: 15px;
-            color: #444;
-        }
+    .assignment-card a:hover {
+      background: #1a4fb7;
+      transform: translateY(-2px);
+    }
 
-        .assignment-card a {
-            display: inline-block;
-            padding: 10px 18px;
-            background-color: #2563eb;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: background 0.3s, transform 0.3s;
-        }
+    /* Back Button */
+    .back-btn {
+      margin-top: 50px;
+      padding: 16px 32px;
+      font-size: 18px;
+      font-weight: 700;
+      border: none;
+      border-radius: 10px;
+      background: #0A66C2;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
 
-        .assignment-card a:hover {
-            background-color: #1a4fb7;
-            transform: translateY(-2px);
-        }
+    .back-btn:hover {
+      background: #004182;
+      transform: translateY(-3px);
+    }
 
-        /* Back Button */
-        .back-btn {
-            padding: 14px 28px;
-            background-color: #0A66C2;
-            color: white;
-            font-size: 16px;
-            font-weight: bold;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            margin-top: 40px;
-            transition: background-color 0.3s, transform 0.3s;
-        }
+    /* Footer */
+    footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 18px;
+      font-weight: 500;
+      margin-top: 60px;
+    }
 
-        .back-btn:hover {
-            background-color: #004182;
-            transform: translateY(-2px);
-        }
-
-        /* Footer */
-        footer {
-            background-color: #0f172a;
-            color: white;
-            text-align: center;
-            padding: 25px 10px;
-            font-size: 18px;
-            font-weight: 500;
-            margin-top: 60px;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .assignment-list {
-                grid-template-columns: 1fr;
-            }
-
-            .back-btn {
-                width: 80%;
-                max-width: 300px;
-            }
-        }
-    </style>
+    /* Responsive */
+    @media (max-width:768px) {
+      .assignment-card { max-width: 100%; }
+      .section { padding: 50px 5%; }
+    }
+  </style>
 </head>
-
 <body>
 
 <section class="section">
-    <h2>My Assignments</h2>
-    <p>Here are some of my academic assignments and reports.</p>
+  <h2>My Assignments</h2>
+  <p>Here are some of my academic assignments and reports.</p>
 
-    <div class="assignment-list">
-
-        <div class="assignment-card">
-            <h3>PESE LAB ASSIGNMENT-01</h3>
-            <p>Topic: PROFILING SHEET</p>
-            <a href="https://drive.google.com/file/d/1Q-0u7-Zis_Eh5PjfLZec9J89cmPL2XNb/view?usp=drive_link" target="_blank">📄 View PDF</a>
-        </div>
-      <div class="assignment-card">
-            <h3>AI & ML Mini Project</h3>
-            <p>Topic: Rainfall Prediction System</p>
-            <a href="PASTE_GOOGLE_DRIVE_LINK_HERE" target="_blank">📄 View PDF</a>
-        </div>
-
+  <div class="assignment-list">
+    <!-- Assignment 1 -->
+    <div class="assignment-card">
+      <h3>PESE LAB ASSIGNMENT-01</h3>
+      <p>Topic: PROFILING SHEET</p>
+      <a href="https://drive.google.com/file/d/1Q-0u7-Zis_Eh5PjfLZec9J89cmPL2XNb/view?usp=drive_link" target="_blank">📄 View PDF</a>
     </div>
 
-    <button class="back-btn" onclick="history.back()">⬅ Back to Home</button>
+   
+
+    <!-- Assignment 3 --
+    <div class="assignment-card">
+      <h3>Machine Learning </h3>
+      <p>Topic: Rainfall Prediction Model</p>
+      <a href="PASTE_GOOGLE_DRIVE_LINK_HERE" target="_blank">📄 View PDF</a>
+    </div>
+  </div>
+----->
+  <!-- Back Button -->
+  <button class="back-btn" onclick="history.back()">⬅ Back to Home</button>
 </section>
 
 <footer>
-    © 2025 Dixa | Assignments
+  © 2025 Dixa | Assignments
 </footer>
 
 </body>

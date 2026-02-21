@@ -208,18 +208,17 @@ body {
     font-size: 14px;
 }
 /*-----------------------assignment ----------------------------------*/
-/* Hero Buttons Section */
+/* Hero Buttons Section - Card Container */
 .hero-buttons-section {
-    background-color: #0f111b; /* dark background for contrast */
-    padding: 50px 10%;         /* space around the box */
-    text-align: center;
+    background-color: #0f111b; /* dark bluish card */
+    padding: 50px 20px;        /* padding inside the card */
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
     margin: 50px auto;         /* space from other sections */
-    max-width: 1000px;         /* keeps it centered and not too wide */
+    max-width: 1000px;         /* keeps it centered */
 }
 
-/* Container for buttons grid */
+/* Buttons Grid */
 .hero-buttons-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -228,7 +227,7 @@ body {
     align-items: center;
 }
 
-/* Individual Buttons */
+/* Individual Button Styles */
 .hero-btn {
     display: inline-block;
     padding: 25px 30px;
@@ -238,20 +237,20 @@ body {
     color: #ffffff;
     font-size: 18px;
     font-weight: 600;
-    text-decoration: none;
     text-align: center;
     border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 /* Hover Effect */
 .hero-btn:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
     background: linear-gradient(145deg, #2563eb, #1e2a5a);
+    cursor: pointer;
 }
-
 
 /*--------------------- CONTACT --------------------*/
 .gmail-box, .linkedin-box {
@@ -303,6 +302,7 @@ body {
         gap: 20px;
     }
 }
+
 
 
 

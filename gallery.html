@@ -25,6 +25,7 @@ body { font-family:"Segoe UI",Arial,sans-serif; background:#f5f7fa; color:#13212
 
 /* Gallery Card */
 .gallery-card {
+  position: relative;
   background: #ffffff;
   border-radius: 15px;
   overflow: hidden;
@@ -32,35 +33,15 @@ body { font-family:"Segoe UI",Arial,sans-serif; background:#f5f7fa; color:#13212
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
 }
 
 .gallery-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.2);
 }
 
-/* Multiple Images inside one card */
-.card-images {
-  display: flex;
-  gap: 5px;
-  padding: 10px;
-}
-
-.card-images img {
-  width: calc(33.33% - 4px);
-  height: 120px;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s;
-}
-
-.card-images img:hover {
-  transform: scale(1.05);
-}
-
-/* Single Image for normal cards */
-.gallery-card > img {
+.gallery-card img {
   width: 100%;
   height: 220px;
   object-fit: cover;
@@ -68,11 +49,25 @@ body { font-family:"Segoe UI",Arial,sans-serif; background:#f5f7fa; color:#13212
   transition: transform 0.3s ease;
 }
 
-.gallery-card:hover > img {
+.gallery-card:hover img {
   transform: scale(1.05);
 }
 
-/* Info Box */
+/* Multiple Images in One Card */
+.card-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+
+.card-images img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Gallery Info */
 .gallery-info {
   padding: 20px;
   background: linear-gradient(to bottom, #cce0ff, #99c2ff);
@@ -162,48 +157,68 @@ footer {
 
 @media (max-width:768px){
   .gallery-card img { height: 180px; }
-  .card-images img { height: 90px; }
+  .card-images { grid-template-columns: 1fr; gap: 6px; }
+  .card-images img { height: 150px; }
   .gallery-info { font-size: 14px; padding: 16px; }
 }
 </style>
 </head>
 
 <body>
-
 <section class="section">
   <h2>My College Journey</h2>
   <p>Moments of learning, leadership, teamwork, and growth.</p>
 
   <div class="gallery-grid">
 
-    <!-- Single Image Card -->
+    <!-- DR. HC Verma Card -->
     <div class="gallery-card" onclick="openModal(this)">
       <img src="images/DR.HC_VERMA_SIR_1SEM_BTECH_CSE.jpeg" alt="DR.HC VERMA SIR">
       <div class="gallery-info">
-        <p>IT WAS A GREAT MEETING WITH DR.HC VERMA SIR. THEY MOTIVATE US FOR FUTURE INNOVATION AND TECHNOLOGY.</p>
+        <p>It was a great meeting with DR.HC Verma Sir. Motivated us for future innovation and technology.</p>
       </div>
     </div>
 
-<!-- Multi-Image Card -->
-<div class="gallery-card">
-  <div class="card-images">
-    <img src="images/aiic_ap.jpeg" alt="Innovation 1" onclick="openModal(this)">
-    <img src="images/aiic_ap_best_16 project.jpeg" alt="Innovation 2" onclick="openModal(this)">
-    <img src="images/aiic_ap_ncc.jpeg" alt="Innovation 3" onclick="openModal(this)">
-  </div>
-  <div class="gallery-info">
-    <h4>Idea & Innovation Competition</h4>
-    <p>Represented my unit in a national-level camp, learning discipline and teamwork.</p>
-    <p>Secured 2nd position for a health-tracking system designed for soldiers.</p>
-  </div>
-</div>
+    <!-- Idea & Innovation Competition Card with 3 Images -->
+    <div class="gallery-card">
+      <div class="card-images">
+        <img src="images/aiic_ap.jpeg" alt="Innovation 1" onclick="openModal(this)">
+        <img src="images/aiic_ap_best_16 project.jpeg" alt="Innovation 2" onclick="openModal(this)">
+        <img src="images/aiic_ap_ncc.jpeg" alt="Innovation 3" onclick="openModal(this)">
+      </div>
+      <div class="gallery-info">
+        <h4>Idea & Innovation Competition</h4>
+        <p>Represented my unit in a national-level camp, learning discipline and teamwork.</p>
+        <p>Secured 2nd position for a health-tracking system designed for soldiers.</p>
+      </div>
+    </div>
 
-    <!-- Single Image Card -->
+    <!-- Republic Day Card -->
     <div class="gallery-card" onclick="openModal(this)">
       <img src="images/RD_GEHU_26.01.2026.jpeg" alt="Republic Day Parade">
       <div class="gallery-info">
-        <h4>REPUBLIC DAY PARADE 2026-27</h4>
-        <p>IT WAS GREAT EVENT — HARD WORK OF 1 MONTH, MISSED LECTURES BUT IT WAS WORTH IT.</p>
+        <h4>Republic Day Parade 2026-27</h4>
+        <p>Hard work of 1 month, missed lectures but it was worth it.</p>
+        <p>Met senior students; gained guidance for future projects.</p>
+      </div>
+    </div>
+
+    <!-- Navy Half Marathon Card -->
+    <div class="gallery-card" onclick="openModal(this)">
+      <img src="images/navy_half_maraton_2024.jpeg" alt="Navy Half Marathon 2024">
+      <div class="gallery-info">
+        <h4>Navy Half Marathon 2024</h4>
+        <p>Participated and successfully finished the Navy Half Marathon.</p>
+        <p>Developed endurance, discipline, and resilience.</p>
+      </div>
+    </div>
+
+    <!-- Project Development Card -->
+    <div class="gallery-card" onclick="openModal(this)">
+      <img src="images/Screenshot (126).png" alt="Project Work">
+      <div class="gallery-info">
+        <h4>Project Development</h4>
+        <p>Worked on technical projects in AI/ML and a simple mood analyser during college.</p>
       </div>
     </div>
 
@@ -223,26 +238,27 @@ footer {
 </div>
 
 <script>
-  // Modal JS for single-image cards
-function openModal(img) {
-  var modal = document.getElementById("imageModal");
-  var modalImg = document.getElementById("modalImg");
-  var captionText = document.getElementById("modalCaption");
-  
-  modal.style.display = "block";
-  modalImg.src = img.src;
+  // Modal JS
+  function openModal(element) {
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImg");
+    var captionText = document.getElementById("modalCaption");
 
-  // Optional: show caption if available
-  var info = img.closest(".gallery-card").querySelector(".gallery-info");
-  captionText.innerHTML = info.innerHTML;
-}
+    if(element.tagName === "IMG") {
+      modalImg.src = element.src;
+      captionText.innerHTML = element.alt;
+    } else {
+      var img = element.querySelector("img");
+      var info = element.querySelector(".gallery-info");
+      modalImg.src = img.src;
+      captionText.innerHTML = info.innerHTML;
+    }
+    modal.style.display = "block";
+  }
 
-function closeModal() {
-  document.getElementById("imageModal").style.display = "none";
-}
+  function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+  }
 </script>
-
 </body>
 </html>
-
-

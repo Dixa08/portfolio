@@ -293,51 +293,50 @@ body {
 */
 
 /*--------------------- CONTACT CARDS --------------------*/
-.contact-container {
+/* Contact Box Container */
+.contact-box {
+    background-color: #f5f7fa;  /* soft light grey like Education section */
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     display: flex;
     justify-content: center;
-    gap: 30px;            /* space between boxes */
+    gap: 30px;                 /* space between links */
     flex-wrap: wrap;
-    margin-top: 40px;
+    max-width: 800px;
+    margin: 40px auto;          /* center on page */
 }
 
-.contact-card {
-    background-color: #f5f7fa; /* light theme background */
-    width: 200px;              /* proper width for visibility */
-    padding: 25px 20px;        /* enough padding inside box */
-    border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-    cursor: pointer;
-}
-
-.contact-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.2);
-    background-color: #e0e4eb;
-}
-
-.contact-card a {
+/* Individual links inside box */
+.contact-box a {
     display: inline-block;
     text-decoration: none;
     color: white;
     font-weight: bold;
-    border-radius: 10px;
-    padding: 12px 20px;
+    border-radius: 12px;
+    padding: 15px 25px;
     font-size: 16px;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.contact-card .gmail-box { background-color: #D14836; }
-.contact-card .gmail-box:hover { background-color: #a23326; }
+.contact-box a.gmail-box { background-color: #D14836; }
+.contact-box a.gmail-box:hover { background-color: #a23326; }
 
-.contact-card .linkedin-box { background-color: #0A66C2; }
-.contact-card .linkedin-box:hover { background-color: #004182; }
+.contact-box a.linkedin-box { background-color: #0A66C2; }
+.contact-box a.linkedin-box:hover { background-color: #004182; }
 
-.contact-card .github-box { background-color: #24292F; }
-.contact-card .github-box:hover { background-color: #1b1f23; }
+.contact-box a.github-box { background-color: #24292F; }
+.contact-box a.github-box:hover { background-color: #1b1f23; }
 
+/* Responsive */
+@media (max-width: 768px){
+    .contact-box {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
 /* Responsive */
 @media (max-width: 768px){
     .contact-container {
@@ -384,6 +383,7 @@ footer {
     font-weight: 500;             /* optional: makes it a bit bolder */
     width: 100%;                  /* ensures full-width footer */
 }
+
 
 
 

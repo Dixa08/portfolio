@@ -1,73 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Gallery | Dixa</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Dixa</title>
+<style>
+  /* Reset & Body */
+  * { box-sizing: border-box; margin:0; padding:0; }
+  body { font-family:"Segoe UI",Arial,sans-serif; background:#f5f7fa; color:#13212e; }
+
+  /* Section */
+  .section { padding: 60px 10%; text-align: center; }
+  .section h2 { font-size: 36px; margin-bottom: 20px; color: #1a3c8b; }
+  .section p { font-size: 18px; margin-bottom: 40px; color: #444; }
+
+  /* Gallery Grid */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    align-items: stretch;
+  }
+
+  /* Gallery Card */
+  .gallery-card {
+    position: relative;
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .gallery-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-card:hover img {
+    transform: scale(1.05);
+  }
+
+  .gallery-info {
+    padding: 20px;
+    background: linear-gradient(to bottom, #cce0ff, #99c2ff);
+    color: #13212e;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  .gallery-info h4 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #1a3c8b;
+    font-weight: 700;
+  }
+
+  .gallery-info p {
+    margin-bottom: 6px;
+  }
+
+  /* Back Button */
+  .back-btn {
+    margin-top: 50px;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    background: #0A66C2;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .back-btn:hover {
+    background: #004182;
+    transform: translateY(-3px);
+  }
+
+  /* Footer */
+  footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 60px;
+  }
+
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.85);
+  }
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    animation: zoomIn 0.3s;
+  }
+
+  @keyframes zoomIn {
+    from {transform: scale(0.7);}
+    to {transform: scale(1);}
+  }
+
+  #modalCaption {
+    margin: 20px auto;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    max-width: 90%;
+  }
+
+  @media (max-width:768px){
+    .gallery-card img { height: 180px; }
+    .gallery-info { font-size: 14px; padding: 16px; }
+  }
+</style>
 </head>
 
 <body>
+
 <section class="section">
-    <h2>My College Journey</h2>
-    <p>Moments of learning, leadership, teamwork, and growth.</p>
+  <h2>My College Journey</h2>
+  <p>Moments of learning, leadership, teamwork, and growth.</p>
 
-    <div class="gallery-grid">
-        
-        <div class="gallery-card" onclick="openModal(this)">
-            <img src="images/DR.HC_VERMA_SIR_1SEM_BTECH_CSE.jpeg" alt="DR.HC VERMA SIR">
-            <div class="gallery-info">
-                <p>IT WAS A GREAT MEETING WITH DR.HC VERMA SIR THEY MOTIVATE US FOR FUTURE INNOVATON AND TECHNOLOGY</p>
-            </div>
-        </div>
+  <div class="gallery-grid">
 
-        <div class="gallery-card" onclick="openModal(this)">
-            <img src="images/innovation_competition.jpg" alt="Innovation Competition">
-            <div class="gallery-info">
-                <h4>Idea & Innovation Competition</h4>
-                <p>Represented my unit in a national-level camp, learning discipline and teamwork.</p>
-                <p>Secured 2nd position for a health-tracking system designed for soldiers.</p>
-            </div>
-        </div>
-
-        <div class="gallery-card" onclick="openModal(this)">
-            <img src="images/RD_GEHU_26.01.2026.jpeg" alt="Republic Day Parade">
-            <div class="gallery-info">
-                <h4>REPUBLIC DAY PARADE 2026-27</h4>
-                <p>IT WAS GREAT EVENT — HARD WORK OF 1 MONTH, MISSED LECTURES BUT IT WAS WORTH IT.</p>
-                <p>We met our super-super senior; they guided us for future and healthy discussion.</p>
-            </div>
-        </div>
-
-        <div class="gallery-card" onclick="openModal(this)">
-            <img src="images/football.jpg" alt="Football Activity">
-            <div class="gallery-info">
-                <h4>Sports Activities</h4>
-                <p>Active participation in football and marathons, building teamwork and stamina.</p>
-            </div>
-        </div>
-
-        <div class="gallery-card" onclick="openModal(this)">
-            <img src="images/project_work.jpg" alt="Project Work">
-            <div class="gallery-info">
-                <h4>Project Development</h4>
-                <p>Working on technical projects in AI/ML and web development during college.</p>
-            </div>
-        </div>
+    <div class="gallery-card" onclick="openModal(this)">
+      <img src="images/DR.HC_VERMA_SIR_1SEM_BTECH_CSE.jpeg" alt="DR.HC VERMA SIR">
+      <div class="gallery-info">
+        <p>IT WAS A GREAT MEETING WITH DR.HC VERMA SIR. THEY MOTIVATE US FOR FUTURE INNOVATION AND TECHNOLOGY.</p>
+      </div>
     </div>
 
-    <button class="back-btn" onclick="history.back()">⬅ Back to Home</button>
+    <div class="gallery-card" onclick="openModal(this)">
+      <img src="images/innovation_competition.jpg" alt="Innovation Competition">
+      <div class="gallery-info">
+        <h4>Idea & Innovation Competition</h4>
+        <p>Represented my unit in a national-level camp, learning discipline and teamwork.</p>
+        <p>Secured 2nd position for a health-tracking system designed for soldiers.</p>
+      </div>
+    </div>
+
+    <div class="gallery-card" onclick="openModal(this)">
+      <img src="images/RD_GEHU_26.01.2026.jpeg" alt="Republic Day Parade">
+      <div class="gallery-info">
+        <h4>REPUBLIC DAY PARADE 2026-27</h4>
+        <p>IT WAS GREAT EVENT — HARD WORK OF 1 MONTH, MISSED LECTURES BUT IT WAS WORTH IT.</p>
+        <p>We met our super-super senior; they guided us for future and healthy discussion.</p>
+      </div>
+    </div>
+
+    <div class="gallery-card" onclick="openModal(this)">
+      <img src="images/football.jpg" alt="Football Activity">
+      <div class="gallery-info">
+        <h4>Sports Activities</h4>
+        <p>Active participation in football and marathons, building teamwork and stamina.</p>
+      </div>
+    </div>
+
+    <div class="gallery-card" onclick="openModal(this)">
+      <img src="images/project_work.jpg" alt="Project Work">
+      <div class="gallery-info">
+        <h4>Project Development</h4>
+        <p>Working on technical projects in AI/ML and web development during college.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="back-btn" onclick="history.back()">⬅ Back to Home</button>
 </section>
 
 <footer>
-    © 2025 Dixa | Assignments
+  © 2025 Dixa | Gallery
 </footer>
 
-<!-- Modal Popup -->
+<!-- Modal -->
 <div id="imageModal" class="modal" onclick="closeModal()">
-    <img class="modal-content" id="modalImg">
-    <div id="modalCaption"></div>
+  <img class="modal-content" id="modalImg">
+  <div id="modalCaption"></div>
 </div>
 
-<script src="script.js"></script>
+<script>
+  // Modal JS
+  function openModal(card) {
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImg");
+    var captionText = document.getElementById("modalCaption");
+    var img = card.querySelector("img");
+    var info = card.querySelector(".gallery-info");
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    captionText.innerHTML = info.innerHTML;
+  }
+
+  function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+  }
+</script>
+
 </body>
 </html>

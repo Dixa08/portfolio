@@ -224,23 +224,24 @@ footer {
 
 <script>
   // Modal JS for single-image cards
-  function openModal(card) {
-    var modal = document.getElementById("imageModal");
-    var modalImg = document.getElementById("modalImg");
-    var captionText = document.getElementById("modalCaption");
-    var img = card.querySelector("img");
-    var info = card.querySelector(".gallery-info");
-    if(img) {
-      modal.style.display = "block";
-      modalImg.src = img.src;
-      captionText.innerHTML = info.innerHTML;
-    }
-  }
+function openModal(img) {
+  var modal = document.getElementById("imageModal");
+  var modalImg = document.getElementById("modalImg");
+  var captionText = document.getElementById("modalCaption");
+  
+  modal.style.display = "block";
+  modalImg.src = img.src;
 
-  function closeModal() {
-    document.getElementById("imageModal").style.display = "none";
-  }
+  // Optional: show caption if available
+  var info = img.closest(".gallery-card").querySelector(".gallery-info");
+  captionText.innerHTML = info.innerHTML;
+}
+
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
 </script>
 
 </body>
 </html>
+

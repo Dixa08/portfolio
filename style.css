@@ -315,6 +315,18 @@ body {
     }
 }
 
+/* FOOTER STYLING */
+footer {
+    background-color: #0f172a;   /* dark background */
+    color: #ffffff;              /* white text */
+    text-align: center;          /* center text horizontally */
+    padding: 25px 0;             /* vertical padding, full width */
+    font-size: 18px;             /* larger text */
+    font-weight: 600;            /* slightly bold */
+    width: 100%;                 /* make footer full width */
+    box-sizing: border-box;      /* ensure padding is inside width */
+    margin: 0;                   /* reset any extra margin */
+}
 
 
 

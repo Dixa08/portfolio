@@ -237,7 +237,7 @@ body {
     font-size: 24px;          /* bigger font */
     font-weight: 700;
     color: #ffffff;           /* white text */
-    background-color: #2563eb; /* blue theme */
+    background-color:  #273468; /*-----for box--------------- blue theme-----#2563eb */
     text-decoration: none;
     text-align: center;
     border-radius: 15px;
@@ -325,6 +325,7 @@ footer {
     font-weight: 500;             /* optional: makes it a bit bolder */
     width: 100%;                  /* ensures full-width footer */
 }
+
 
 
 

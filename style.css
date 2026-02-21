@@ -249,7 +249,7 @@ body {
 .hero-btn:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 28px rgba(0,0,0,0.25);
-    background-color: #1e40af; /* slightly darker blue on hover */
+    background-color:  #273468 ; /* slightly darker blue on hover  #273468 () #1e40af */
     cursor: pointer;
 }
 
@@ -325,6 +325,7 @@ footer {
     font-weight: 500;             /* optional: makes it a bit bolder */
     width: 100%;                  /* ensures full-width footer */
 }
+
 
 
 

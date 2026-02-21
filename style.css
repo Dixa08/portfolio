@@ -208,14 +208,15 @@ body {
     font-size: 14px;
 }
 /*-----------------------assignment ----------------------------------*/
-/* Hero Buttons Section - Light Themed */
+/* Hero Buttons Section - White/Grey Theme */
 .hero-buttons-section {
     padding: 60px 5%;  
-    background: linear-gradient(135deg, #e0e7ff, #c7d2fe); /* soft light bluish gradient */
+    background-color: #f5f7fa; /* same soft light grey as Education */
     border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1); /* subtle shadow */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08); /* subtle shadow */
     margin: 50px auto;
     max-width: 1200px;
+    text-align: center;
 }
 
 /* Buttons Grid */
@@ -235,20 +236,20 @@ body {
     padding: 50px 20px;           
     font-size: 22px;
     font-weight: 700;
-    color: white;
-    background: linear-gradient(145deg, #4f46e5, #6366f1); /* slightly darker bluish gradient for buttons */
+    color: #13212e; /* dark text for contrast on light background */
+    background-color: #ffffff; /* white button */
     text-decoration: none;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1); /* subtle shadow */
     transition: all 0.3s ease;
 }
 
 /* Hover Effect */
 .hero-btn:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.25);
-    background: linear-gradient(145deg, #6366f1, #4f46e5);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+    background-color: #e0e0e0; /* light grey hover */
     cursor: pointer;
 }
 
@@ -313,6 +314,7 @@ body {
         gap: 20px;
     }
 }
+
 
 
 

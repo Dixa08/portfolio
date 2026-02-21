@@ -8,36 +8,40 @@
 </head>
 
 <body>
-
-<!-- ===== HERO ===== -->
+<======hero================================>
 <header class="hero">
-    <div class="hero-text">
-        <h1>Dixa </h1>
-        <h3> Student ||Software Engineering ||  AI&ML</h3>
-        <p>
-            B.Tech Computer Science and ENGINEERING specializing in AI & ML
-        </p>
 
-        </div>
+    <div class="hero-text">
+        <h1>Dixa</h1>
+        <h3>Student || Software Engineering || AI&ML</h3>
+        <p>B.Tech Computer Science and Engineering specializing in AI & ML</p>
     </div>
 
     <div class="hero-image">
+        <img src="images/profile_photo_dixa.png" alt="Dixa Rawat">
+    </div>
+
+</header>
+    
+
+<div class="hero-image">
 <img src="https://Dixa08.github.io/portfolio/images/profile_photo_dixa.png" alt="Dixa Rawat">    </div>
 </header>
 <script>
+    
 function changeSpeed(speed) {
     document.getElementById("introVideo").playbackRate = speed;
 }
 </script>
 <!-- ===== INTRO VIDEO ===== -->
+<!-- ===== INTRO VIDEO ===== -->
 <section class="video-intro">
 
-    <video id="introVideo" autoplay muted loop controls>
-        <source src="DIXA_COMPRESSED_INTRO VIDEO (1).mp4" type="video/mp4">
+    <video id="introVideo" controls autoplay muted loop>
+        <source src="images/DIXA_COMPRESSED_INTRO VIDEO (1).mp4.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
-    <!-- Speed control -->
     <div class="video-controls">
         <label>Speed:</label>
         <select onchange="changeSpeed(this.value)">
@@ -48,6 +52,8 @@ function changeSpeed(speed) {
             <option value="2">2x</option>
         </select>
     </div>
+
+</section>
 
 </section>
 <!-- ===== SHORT INTRO ===== -->
@@ -155,6 +161,7 @@ function changeSpeed(speed) {
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

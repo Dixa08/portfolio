@@ -211,7 +211,7 @@ body {
 /* Hero Buttons Section - Outer Light Grey */
 .hero-buttons-section {
     padding: 60px 5%;  
-    background-color: #f5f7fa; /* soft light grey outer section */
+    background-color: #f5f7fa; /* soft light grey as Education */
     border-radius: 15px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.08);
     margin: 50px auto;
@@ -222,7 +222,7 @@ body {
 /* Buttons Grid */
 .hero-buttons-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
     justify-items: stretch;
     align-items: stretch;
@@ -233,23 +233,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 20px;           
-    font-size: 22px;
+    padding: 80px 20px;      /* bigger height */
+    font-size: 24px;          /* bigger font */
     font-weight: 700;
-    color: #ffffff; /* white text for contrast */
-    background-color: #1e3a8a; /* blue themed box */
+    color: #ffffff;           /* white text */
+    background-color: #2563eb; /* blue theme */
     text-decoration: none;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 /* Hover Effect */
 .hero-btn:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.15);
-    background-color: #2563eb; /* slightly lighter blue on hover */
+    box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+    background-color: #1e40af; /* slightly darker blue on hover */
     cursor: pointer;
 }
 
@@ -260,8 +260,8 @@ body {
     }
 
     .hero-btn {
-        font-size: 20px;
-        padding: 40px 20px;
+        font-size: 22px;
+        padding: 60px 20px;
     }
 }
 /*--------------------- CONTACT --------------------*/
@@ -314,6 +314,7 @@ body {
         gap: 20px;
     }
 }
+
 
 
 

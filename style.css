@@ -12,6 +12,21 @@ body {
     color: #13212e;
     background-color: #f9fafb;
 }
+/*----------------self intro video-----------------------------------------------*/
+.video-intro {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.video-intro video {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 12px;
+}
+
+.video-controls {
+    margin-top: 10px;
+}
 
 /* HERO */
 .hero {
@@ -202,3 +217,4 @@ footer {
 .assignment-card a:hover {
     opacity: 0.9;
 }
+

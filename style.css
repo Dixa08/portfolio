@@ -14,30 +14,32 @@ body {
 }
 /*----------------self intro video-----------------------------------------------*/
 /* ===== INTRO VIDEO SECTION ===== */
+/* ===== INTRO VIDEO SECTION ===== */
 .video-intro {
     text-align: center;
-    padding: 40px 20px;
-    margin-top: 20px;
+    padding: 60px 20px;   /* more spacing */
+    margin-top: 30px;
 }
 
+/* Bigger professional video size */
 .video-intro video {
-    width: 100%;
-    max-width: 750px;
+    width: 90%;            /* responsive width */
+    max-width: 1000px;     /* bigger video */
     height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 }
 
+/* Speed control styling */
 .video-controls {
-    margin-top: 12px;
-    font-size: 14px;
+    margin-top: 15px;
+    font-size: 15px;
 }
 
 .video-controls select {
-    padding: 5px 8px;
+    padding: 6px 10px;
     border-radius: 6px;
 }
-
 /* HERO */
 .hero {
     display: flex;
@@ -234,6 +236,7 @@ footer {
   margin: 15px 0;
   border-radius: 10px;
 }
+
 
 
 

@@ -293,33 +293,47 @@ body {
 */
 
 /*--------------------- CONTACT CARDS --------------------*/
-/* Contact Box Container */
-.contact-box {
-    background-color: #f5f7fa;  /* soft light grey like Education section */
-    padding: 30px 20px;
-    border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-    display: flex;
-    justify-content: center;
-    gap: 30px;                 /* space between links */
-    flex-wrap: wrap;
-    max-width: 800px;
-    margin: 40px auto;          /* center on page */
+/* Contact Box Section */
+.contact-section {
+    background-color: #f5f7fa;  /* soft light grey background */
+    padding: 50px 30px;          /* bigger padding for bigger box */
+    border-radius: 20px;          /* smooth rounded corners */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    max-width: 900px;             /* bigger width */
+    margin: 50px auto;            /* center on page */
+    text-align: center;
 }
 
-/* Individual links inside box */
+/* Heading inside the box */
+.contact-section h2 {
+    font-size: 32px;
+    color: #1a3c8b;
+    margin-bottom: 25px;
+}
+
+/* Links container inside box */
+.contact-box {
+    display: flex;
+    justify-content: center;
+    gap: 40px;                   /* spacing between links */
+    flex-wrap: wrap;
+}
+
+/* Individual links inside the box */
 .contact-box a {
     display: inline-block;
     text-decoration: none;
     color: white;
     font-weight: bold;
     border-radius: 12px;
-    padding: 15px 25px;
-    font-size: 16px;
+    padding: 18px 30px;          /* bigger clickable area */
+    font-size: 18px;
     transition: all 0.3s ease;
     cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+/* Individual link colors */
 .contact-box a.gmail-box { background-color: #D14836; }
 .contact-box a.gmail-box:hover { background-color: #a23326; }
 
@@ -329,23 +343,13 @@ body {
 .contact-box a.github-box { background-color: #24292F; }
 .contact-box a.github-box:hover { background-color: #1b1f23; }
 
-/* Responsive */
+/* Responsive for smaller screens */
 @media (max-width: 768px){
     .contact-box {
         flex-direction: column;
         gap: 20px;
         align-items: center;
     }
-}
-/* Responsive */
-@media (max-width: 768px){
-    .contact-container {
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-    }
-
-    .contact-card { width: 80%; max-width: 300px; }
 }
 
 /*--------------------- RESPONSIVE --------------------*/
@@ -383,6 +387,7 @@ footer {
     font-weight: 500;             /* optional: makes it a bit bolder */
     width: 100%;                  /* ensures full-width footer */
 }
+
 
 
 

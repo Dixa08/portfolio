@@ -1,10 +1,126 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Assignments | Dixa | ML-2|ROLL NO:28||University_ROLL_NO:2419448</title>
+    <title>Assignments | Dixa | ML-2 | ROLL NO:28 | University_ROLL_NO:2419448</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #13212e;
+        }
+
+        .section {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+        .section p {
+            font-size: 16px;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        /* Assignment Cards Grid */
+        .assignment-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            justify-items: center;
+        }
+
+        .assignment-card {
+            background-color: #ffffff;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        .assignment-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+        }
+
+        .assignment-card h3 {
+            margin-bottom: 10px;
+            color: #1a73e8;
+        }
+
+        .assignment-card p {
+            margin-bottom: 15px;
+            font-size: 15px;
+            color: #444;
+        }
+
+        .assignment-card a {
+            display: inline-block;
+            padding: 10px 18px;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .assignment-card a:hover {
+            background-color: #1a4fb7;
+            transform: translateY(-2px);
+        }
+
+        /* Back Button */
+        .back-btn {
+            padding: 14px 28px;
+            background-color: #0A66C2;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 40px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #004182;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 25px 10px;
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 60px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .assignment-list {
+                grid-template-columns: 1fr;
+            }
+
+            .back-btn {
+                width: 80%;
+                max-width: 300px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -20,36 +136,15 @@
             <p>Topic: PROFILING SHEET</p>
             <a href="https://drive.google.com/file/d/1Q-0u7-Zis_Eh5PjfLZec9J89cmPL2XNb/view?usp=drive_link" target="_blank">📄 View PDF</a>
         </div>
-    </div>
-        <!-----------NEXT ASSI------------
-        <div class="assignment-card">
-            <h3>Web Development Assignment</h3>
-            <p>Topic: Online Examination System</p>
+      <div class="assignment-card">
+            <h3>AI & ML Mini Project</h3>
+            <p>Topic: Rainfall Prediction System</p>
             <a href="PASTE_GOOGLE_DRIVE_LINK_HERE" target="_blank">📄 View PDF</a>
         </div>
-       ------------------------------ -->
+
     </div>
-<button class="back-btn" onclick="history.back()">⬅ Back to Home</button>
-</section>
 
-<!-- CSS Styling -->
-<style>
-.back-btn {
-    padding: 10px 20px;
-    background-color: #0A66C2; /* LinkedIn blue or pick your own */
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.back-btn:hover {
-    background-color: #004182; /* darker shade on hover */
-}
-</style>
+    <button class="back-btn" onclick="history.back()">⬅ Back to Home</button>
 </section>
 
 <footer>

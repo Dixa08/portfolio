@@ -12,35 +12,8 @@ body {
     color: #13212e;
     background-color: #f9fafb;
 }
-/*----------------self intro video-----------------------------------------------*/
-/* ===== INTRO VIDEO SECTION ===== */
-/* ===== INTRO VIDEO SECTION ===== */
-.video-intro {
-    text-align: center;
-    padding: 60px 20px;   /* more spacing */
-    margin-top: 30px;
-}
 
-/* Bigger professional video size */
-.video-intro video {
-    width: 90%;            /* responsive width */
-    max-width: 1000px;     /* bigger video */
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-}
-
-/* Speed control styling */
-.video-controls {
-    margin-top: 15px;
-    font-size: 15px;
-}
-
-.video-controls select {
-    padding: 6px 10px;
-    border-radius: 6px;
-}
-/* HERO */
+/*--------------------- HERO --------------------*/
 .hero {
     display: flex;
     justify-content: space-between;
@@ -55,24 +28,23 @@ body {
 }
 
 .hero-text h1 {
-    font-size: 42px;
+    font-size: 48px;
+    margin-bottom: 12px;
+    color: #1a73e8;
 }
 
-.hero-buttons button {
-    padding: 12px 20px;
-    margin: 5px;
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-    border-radius: 6px;
-    background-color: #2563eb;
-    color: white;
-    transition: 0.3s;
+.hero-text h2 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 16px;
 }
 
-.hero-buttons button:hover {
-    opacity: 0.85;
-    transform: translateY(-2px);
+.hero-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    color: #e0e0e0;
 }
 
 .hero-image img {
@@ -82,51 +54,88 @@ body {
     object-fit: cover;
     border: 4px solid #2563eb;
 }
-/*<!-- ===== PROJECTS ===== -->*/
-.projects {
+
+/*--------------------- HERO BUTTONS --------------------*/
+.hero-buttons {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
+    margin-top: 40px;
+}
+
+.hero-buttons button {
+    background: #141e36;
+    color: white;
+    border: none;
+    padding: 25px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.hero-buttons button:hover {
+    transform: translateY(-4px);
+    background: #2563eb;
+    box-shadow: 0 8px 20px rgba(62, 45, 45, 0.25);
+}
+
+/*--------------------- VIDEO --------------------*/
+.video-intro {
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 30px;
+}
+
+.video-intro video {
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.video-controls {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.video-controls select {
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+/*--------------------- PROJECTS --------------------*/
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
     margin-top: 30px;
 }
 
 .project-card {
     background: #132758;
     color: white;
-    padding: 20px;
-    border-radius: 10px;
-}
-/*----------------------------hero-buttons----------------------------- */
-/* ===== HERO BUTTON GRID ===== */
-.hero-buttons {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 40px;
-    margin-top: 30px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Button Card Style */
-.hero-buttons button {
-    background: #141e36;
-    color: white;
-    border: none;
-    padding: 40px 20px;
-    border-radius: 10px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
 }
 
-/* Hover Effect */
-.hero-buttons button:hover {
-    transform: translateY(-4px);
-    background: #2563eb;
-    box-shadow: 0 6px 14px rgba(62, 45, 45, 0.25);
+.project-card h4 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #1a73e8;
 }
 
-/*---------------------------------------------------------------------*/
-/* SECTIONS */
+/*--------------------- SECTIONS --------------------*/
 .section {
     padding: 60px 10%;
     text-align: center;
@@ -138,128 +147,11 @@ body {
 
 .section h2 {
     font-size: 32px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    color: #222;
 }
 
-/* FOOTER */
-footer {
-    background-color: #0f172a;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-text {
-        max-width: 100%;
-    }
-
-    .hero-image {
-        margin-top: 20px;
-    }
-}
-/*
-<!-- CSS Styling -->
-*/
-.gmail-box {
-    display: inline-block;
-    padding: 12px 20px;
-    background-color: #D14836; /* Gmail red */
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    transition: background-color 0.3s ease;
-}
-.gmail-box:hover {
-    background-color: #a23326; /* darker red on hover */
-}
-.linkedin-box {
-    display: inline-block;
-    padding: 12px 20px;
-    background-color: #0A66C2; /* LinkedIn blue */
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    transition: background-color 0.3s ease;
-}
-.linkedin-box:hover {
-    background-color: #004182; /* darker blue on hover */
-}
-
-
-/*-----------------ASSIGNMENT -------------*/
-.assignment-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.assignment-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    text-align: center;
-}
-
-.assignment-card h3 {
-    margin-bottom: 10px;
-}
-
-.assignment-card a {
-    display: inline-block;
-    margin-top: 10px;
-    background: #2563eb;
-    color: white;
-    padding: 8px 14px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.assignment-card a:hover {
-    opacity: 0.9;
-}
-<!----------------------------learnings------------------------------------------------------------------------------------>
-.lab-card {
-  background: #f4f6f8;
-  padding: 20px;
-  margin: 15px 0;
-  border-radius: 10px;
-}
-
-
-<!-----------------------------------education------------------------------------------------------------------------------>
-
-/* ===== EDUCATION SECTION ===== */
-/* Center content inside all .section */
-.section {
-    padding: 60px 10%;
-    text-align: center;  /* centers headings and paragraphs */
-}
-
-/* Optional: make the <p> slightly nicer */
-.section p {
-    font-size: 18px;
-    margin: 8px 0;
-    line-height: 1.6;
-    color: #13212e;
-}
-
-/* Optional: highlight degree */
-.section p strong {
-    color: #2563eb;
-    font-weight: 600;
-}
+/*--------------------- EDUCATION --------------------*/
 .education-section {
     padding: 60px 20px;
     background: #f5f7fa;
@@ -273,31 +165,32 @@ footer {
     font-weight: 600;
 }
 
-/* Education Card */
 .education-card {
-    display: inline-block;   /* keeps it centered */
-    padding: 25px 35px;
+    display: inline-block;
+    padding: 30px 40px;
     background-color: #f4f6f8;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
     text-align: center;
     max-width: 500px;
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Hover effect */
 .education-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.15);
 }
 
 .education-card h3 {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     color: #1a73e8;
 }
 
 .edu-college {
     font-weight: 500;
     color: #444;
+    margin-bottom: 4px;
 }
 
 .edu-year {
@@ -305,7 +198,53 @@ footer {
     font-size: 14px;
 }
 
+/*--------------------- CONTACT --------------------*/
+.gmail-box, .linkedin-box {
+    display: inline-block;
+    padding: 12px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
 
+.gmail-box {
+    background-color: #D14836;
+}
+.gmail-box:hover {
+    background-color: #a23326;
+}
 
+.linkedin-box {
+    background-color: #0A66C2;
+}
+.linkedin-box:hover {
+    background-color: #004182;
+}
 
+/*--------------------- RESPONSIVE --------------------*/
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .hero-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .projects {
+        gap: 20px;
+    }
+
+    .hero-buttons {
+        gap: 20px;
+    }
+}

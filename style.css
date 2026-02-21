@@ -229,6 +229,7 @@ body {
 }
 
 /* Individual Buttons */
+/* Individual Buttons */
 .hero-btn {
     display: flex;
     justify-content: center;
@@ -236,8 +237,8 @@ body {
     padding: 50px 20px;           
     font-size: 22px;
     font-weight: 700;
-    color: #13212e; /* dark text for contrast on light background */
-    background-color: #ffffff; /* white button */
+    color: #ffffff; /* White text for contrast on blue */
+    background-color: #3b82f6; /* blue button, matches theme */
     text-decoration: none;
     text-align: center;
     border-radius: 15px;
@@ -249,7 +250,7 @@ body {
 .hero-btn:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 28px rgba(0,0,0,0.15);
-    background-color: #e0e0e0; /* light grey hover */
+    background-color: #2563eb; /* slightly darker blue on hover */
     cursor: pointer;
 }
 
@@ -314,6 +315,7 @@ body {
         gap: 20px;
     }
 }
+
 
 
 

@@ -208,23 +208,22 @@ body {
     font-size: 14px;
 }
 /*-----------------------assignment ----------------------------------*/
-/* Hero Buttons Section - Card Container */
-/* Hero Buttons Section - Full Width */
+/* Hero Buttons Section - Light Themed */
 .hero-buttons-section {
-    padding: 60px 5%;               /* space around */
-    background: linear-gradient(120deg, #1e2a5a, #2563eb, #1e2a5a); /* bluish gradient */
+    padding: 60px 5%;  
+    background: linear-gradient(135deg, #e0e7ff, #c7d2fe); /* soft light bluish gradient */
     border-radius: 15px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
-    margin: 50px auto;             /* spacing from other sections */
-    max-width: 1200px;             /* limit container width */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1); /* subtle shadow */
+    margin: 50px auto;
+    max-width: 1200px;
 }
 
 /* Buttons Grid */
 .hero-buttons-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 3 buttons fit wide screens */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
-    justify-items: stretch;         /* buttons fill grid width */
+    justify-items: stretch;
     align-items: stretch;
 }
 
@@ -233,35 +232,35 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 20px;            /* taller buttons */
+    padding: 50px 20px;           
     font-size: 22px;
     font-weight: 700;
     color: white;
-    background: linear-gradient(145deg, #1e2a5a, #2563eb); /* gradient */
+    background: linear-gradient(145deg, #4f46e5, #6366f1); /* slightly darker bluish gradient for buttons */
     text-decoration: none;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
     transition: all 0.3s ease;
 }
 
 /* Hover Effect */
 .hero-btn:hover {
     transform: translateY(-6px);
-    box-shadow: 0 14px 28px rgba(0,0,0,0.35);
-    background: linear-gradient(145deg, #2563eb, #1e2a5a);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+    background: linear-gradient(145deg, #6366f1, #4f46e5);
     cursor: pointer;
 }
 
 /* Responsive for Mobile */
 @media (max-width: 768px) {
     .hero-buttons-container {
-        grid-template-columns: 1fr;  /* stack vertically */
+        grid-template-columns: 1fr;
     }
 
     .hero-btn {
         font-size: 20px;
-        padding: 40px 20px;         /* slightly smaller on mobile */
+        padding: 40px 20px;
     }
 }
 /*--------------------- CONTACT --------------------*/
@@ -314,6 +313,7 @@ body {
         gap: 20px;
     }
 }
+
 
 
 

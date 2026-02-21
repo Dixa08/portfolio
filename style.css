@@ -211,18 +211,18 @@ body {
 /* Hero Buttons Section - Card Container */
 .hero-buttons-section {
     background-color: #0f111b; /* dark bluish card */
-    padding: 50px 20px;        /* padding inside the card */
+    padding: 60px 30px;        /* more padding inside the card */
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.4);
     margin: 50px auto;         /* space from other sections */
-    max-width: 1000px;         /* keeps it centered */
+    max-width: 1200px;         /* bigger container */
 }
 
 /* Buttons Grid */
 .hero-buttons-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* larger min width */
+    gap: 35px;
     justify-items: center;
     align-items: center;
 }
@@ -230,28 +230,40 @@ body {
 /* Individual Button Styles */
 .hero-btn {
     display: inline-block;
-    padding: 25px 30px;
+    padding: 35px 40px;        /* increase height and width */
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;           /* bigger buttons */
     background: linear-gradient(145deg, #1e2a5a, #2563eb); /* bluish gradient */
     color: #ffffff;
-    font-size: 18px;
+    font-size: 20px;            /* slightly larger font */
     font-weight: 600;
     text-align: center;
-    border-radius: 12px;
+    border-radius: 15px;        /* slightly bigger rounding */
     text-decoration: none;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 /* Hover Effect */
 .hero-btn:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.35);
     background: linear-gradient(145deg, #2563eb, #1e2a5a);
     cursor: pointer;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-buttons-container {
+        grid-template-columns: 1fr;  /* single column on mobile */
+    }
+
+    .hero-btn {
+        max-width: 90%;              /* fill more space on small screens */
+        padding: 30px 20px;          /* adjust padding */
+        font-size: 18px;
+    }
+}
 /*--------------------- CONTACT --------------------*/
 .gmail-box, .linkedin-box {
     display: inline-block;
@@ -302,6 +314,7 @@ body {
         gap: 20px;
     }
 }
+
 
 
 

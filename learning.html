@@ -1,134 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Learning | Dixa </title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .learning-list {
-            list-style-type: square; /* bullet style */
-            padding-left: 4px;       /* reduced indent */
-            font-size: 16px;
-        }
-        .learning-list li {
-            margin: 4px 0;            /* tighter spacing */
-            line-height: 1.4;         /* better readability */
-        }
-        .back-btn {
-            padding: 10px 20px;
-            background-color: #1d2e3f; /* dark blue */
-            color: white;
-            font-size: 16px;
-            font-weight: bold;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .back-btn:hover {
-            background-color: #004182; /* darker shade on hover */
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learning | Dixa</title>
+<style>
+/* Reset & Body */
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family:"Segoe UI",Arial,sans-serif; background:#f5f7fa; color:#13212e; line-height:1.6; }
+
+/* Section */
+.section { padding: 60px 10%; text-align: center; }
+.section h2 { font-size: 36px; margin-bottom: 20px; color: #1a3c8b; }
+.section p { font-size: 18px; margin-bottom: 40px; color: #444; }
+
+/* Lab Cards */
+.lab-card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.lab-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+.lab-card h3 {
+  font-size: 22px;
+  color: #0a3c8b;
+  margin-bottom: 12px;
+}
+.lab-card p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+.lab-card strong {
+  color: #13212e;
+}
+
+/* Daily Learning Points Box */
+.learning-list {
+  list-style-type: square;
+  padding: 20px 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  font-size: 16px;
+  margin: 40px 0;
+  text-align: left;
+}
+.learning-list li {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+/* Back Button */
+.back-btn {
+  margin-top: 30px;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  background: #0A66C2;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.back-btn:hover {
+  background: #004182;
+  transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 60px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .lab-card { padding: 20px 18px; }
+  .section h2 { font-size: 28px; }
+  .section p { font-size: 16px; }
+  .learning-list { padding: 16px 18px; font-size: 15px; }
+}
+</style>
 </head>
 <body>
+
 <section class="section">
-    <h2>Learning Journey</h2>
-    <p>Courses, certifications, and technologies I am currently learning.</p>
-    <!---------------------new add one>
-    <!-- ===== PESE LAB LEARNING ===== -->
-<section class="section" id="pes-labs">
+  <h2>Learning Journey</h2>
+  <p>Courses, certifications, and technologies I am currently learning.</p>
 
-  <h2>PES Lab Learning Journey</h2>
+  <!-- PES Lab Learning -->
+  <section id="pes-labs">
+    <h2>PES Lab Learning Journey</h2>
 
-  <!-- Lab 1 -->
-  <div class="lab-card">
-    <h3>Lab 1: Introduction to Personality Enhancement Skills</h3>
-    <p>
-      In the first lab, we were introduced to the importance of personality development 
-      and communication skills. Ma'am guided us on how to improve our English speaking 
-      ability and build confidence while communicating.
-    </p>
-    <p>
-      We also learned how to create a professional LinkedIn profile and how to present 
-      ourselves online. The session included useful tips for speaking good and clear English 
-      in daily life and professional environments.
-    </p>
-    <p><strong>Key Learning:</strong> Confidence in communication, professional online presence, and English improvement techniques.</p>
-  </div>
+    <div class="lab-card">
+      <h3>Lab 1: Introduction to Personality Enhancement Skills</h3>
+      <p>We were introduced to personality development and communication skills. Learned to improve English speaking and build confidence.</p>
+      <p>Also learned to create a professional LinkedIn profile and present ourselves online.</p>
+      <p><strong>Key Learning:</strong> Confidence in communication, professional online presence, and English improvement techniques.</p>
+    </div>
 
-  <!-- Lab 2 -->
-  <div class="lab-card">
-    <h3>Lab 2: Self Analysis and Interview Preparation</h3>
-    <p>
-      In this lab, we worked on self-analysis to understand our strengths, weaknesses, 
-      interests, and personality traits. We practiced answering common interview questions 
-      and learned how to respond confidently.
-    </p>
-    <p>
-      We were also taught how to introduce ourselves properly in interviews, including 
-      structuring our introduction in a clear and professional way.
-    </p>
-    <p><strong>Key Learning:</strong> Self awareness, interview confidence, and structured self introduction.</p>
-  </div>
+    <div class="lab-card">
+      <h3>Lab 2: Self Analysis and Interview Preparation</h3>
+      <p>Worked on self-analysis to understand strengths, weaknesses, and personality traits.</p>
+      <p>Practiced answering interview questions and structured introductions.</p>
+      <p><strong>Key Learning:</strong> Self awareness, interview confidence, and structured self introduction.</p>
+    </div>
 
-  <!-- Lab 3 -->
-  <div class="lab-card">
-    <h3>Lab 3: Presentation Skills and Professional Behaviour</h3>
-    <p>
-      This lab focused on developing presentation skills. We learned how to prepare, 
-      organize, and deliver an effective presentation. We were taught about body language, 
-      voice modulation, and audience engagement.
-    </p>
-    <p>
-      We also discussed professional skills and how to present ourselves properly in 
-      academic and professional environments.
-    </p>
-    <p><strong>Key Learning:</strong> Public speaking confidence, presentation structure, and professional communication skills.</p>
-  </div>
+    <div class="lab-card">
+      <h3>Lab 3: Presentation Skills and Professional Behaviour</h3>
+      <p>Focused on preparing, organizing, and delivering effective presentations. Learned body language, voice modulation, and audience engagement.</p>
+      <p><strong>Key Learning:</strong> Public speaking confidence, presentation structure, and professional communication skills.</p>
+    </div>
 
-  <!-- Lab 4 -->
-  <div class="lab-card">
-    <h3>Lab 4: Group Presentation and Team Collaboration</h3>
-    <p>
-      In this session, we performed group presentations. This activity helped us 
-      experience teamwork, coordination, and collaborative learning.
-    </p>
-    <p>
-      We learned how to divide responsibilities, support team members, and present 
-      ideas together effectively. It improved our communication, leadership, and 
-      confidence while speaking in front of others.
-    </p>
-    <p><strong>Key Learning:</strong> Teamwork, collaboration, confidence, and real presentation experience.</p>
-  </div>
+    <div class="lab-card">
+      <h3>Lab 4: Group Presentation and Team Collaboration</h3>
+      <p>Performed group presentations to experience teamwork, coordination, and collaborative learning.</p>
+      <p><strong>Key Learning:</strong> Teamwork, collaboration, confidence, and real presentation experience.</p>
+    </div>
 
-  <!-- Lab 5 -->
-  <div class="lab-card">
-    <h3>Lab 5: (Add Your Topic Here)</h3>
-    <p>
-      Write what you learned in this lab here.
-    </p>
-  </div>
+    <div class="lab-card">
+      <h3>Lab 5: Add Your Topic Here</h3>
+      <p>Write what you learned in this lab here.</p>
+    </div>
+  </section>
 
+  <!-- Daily Learning Points -->
+  <ul class="learning-list">
+    <li>Learned about HTML structure and tags</li>
+    <li>Practiced CSS styling for buttons</li>
+    <li>Explored JavaScript basics</li>
+    <li>Worked on portfolio layout</li>
+    <li>Studied machine learning regression models</li>
+    <li>Improved time management with planners</li>
+    <li>Read about Git and version control</li>
+    <li>Experimented with responsive design</li>
+    <li>Learned about APIs and JSON</li>
+    <li>Practiced problem-solving with Python</li>
+  </ul>
+
+  <button class="back-btn" onclick="history.back()">⬅ Back to Home</button>
 </section>
-    
-    <!--til now=---------------->
-    <!-- Daily Learning Points -->
-    <ul class="learning-list">
-        <li>Learned about HTML structure and tags</li>
-        <li>Practiced CSS styling for buttons</li>
-        <li>Explored JavaScript basics</li>
-        <li>Worked on portfolio layout</li>
-        <li>Studied machine learning regression models</li>
-        <li>Improved time management with planners</li>
-        <li>Read about Git and version control</li>
-        <li>Experimented with responsive design</li>
-        <li>Learned about APIs and JSON</li>
-        <li>Practiced problem-solving with Python</li>
-    </ul>
 
-    <!-- Styled Back Button -->
-    <button class="back-btn" onclick="history.back()">⬅ Back to Home</button>
-</section>
+<footer>
+  © 2025 Dixa | Learning
+</footer>
+
 </body>
-
 </html>
-

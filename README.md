@@ -11,13 +11,26 @@ js
 
 #
 introduction
+-
+#
 video of intro
+-
+#
 projects
+-
+#
 acedemics
+-
+#
 assignments
+-
+#
 gallery
+-
+#
 learning
 -
+
 contact inforamtion
 
 

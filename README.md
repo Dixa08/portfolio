@@ -1,300 +1,503 @@
-# 🚀 Dixa's AI/ML Portfolio
+# 🧠 Dixa | AI/ML Engineer in Progress
 
-> **Exploring Intelligence. Building Technology. Learning Every Day.**
+<p align="center">
 
-Welcome to my personal portfolio! 👋
-I’m **Dixa**, a Computer Science & Engineering student passionate about building intelligent systems and experimenting with emerging technologies.
+### `AI × ML × DL × NLP × Computer Vision × Research`
 
-This portfolio is more than just a collection of projects — it represents my **learning journey, experiments, academic work, and exploration of AI**.
+**Turning ideas → experiments → intelligent systems 🚀**
 
----
-
-## 🧠 About Me
-
-Hi, I'm **Dixa** 👩‍💻
-
-I am currently pursuing **B.Tech in Computer Science and Engineering** from **Graphic Era Hill University, Dehradun**.
-
-My primary interests are:
-
-* 🤖 Artificial Intelligence
-* 🧠 Machine Learning
-* 🔥 Deep Learning
-* 💬 Natural Language Processing
-* 👁️ Computer Vision
-* 🌐 Web Development
-* 📊 Data Science
-* 🛰️ Remote Sensing & GIS
-* 🤝 AI-powered Applications
-
-I enjoy turning ideas into working prototypes and learning by building real-world projects.
+</p>
 
 ---
 
-## ⚡ My Tech Universe
+## 👋 Who Am I?
+
+Hi, I'm **Dixa** — a Computer Science & Engineering student at **Graphic Era Hill University, Dehradun**.
+
+I'm interested in understanding how machines can:
+
+> **Learn → Understand → See → Reason → Act**
+
+My journey revolves around **Artificial Intelligence, Machine Learning, Deep Learning, NLP, Computer Vision, and intelligent software systems.**
+
+I don't want to only *use* AI.
+
+**I want to understand how it works and build with it.**
+
+---
+
+# 🧠 My AI Universe
 
 ```text
-                 ┌─────────────────────┐
-                 │   ARTIFICIAL        │
-                 │   INTELLIGENCE 🤖   │
-                 └──────────┬──────────┘
-                            │
-          ┌─────────────────┼─────────────────┐
-          ▼                 ▼                 ▼
-      🧠 ML/DL            💬 NLP             👁️ CV
-          │                 │                 │
-    ┌─────┴─────┐     ┌─────┴─────┐     ┌─────┴─────┐
-    │Regression │     │LLMs        │     │OpenCV     │
-    │Trees      │     │RAG         │     │MediaPipe  │
-    │CNN        │     │Embeddings  │     │Detection  │
-    │Transformers│    │Chatbots    │     │Tracking   │
-    └───────────┘     └────────────┘     └───────────┘
+                         ┌───────────────────┐
+                         │   ARTIFICIAL      │
+                         │   INTELLIGENCE 🤖 │
+                         └─────────┬─────────┘
+                                   │
+              ┌────────────────────┼────────────────────┐
+              │                    │                    │
+              ▼                    ▼                    ▼
+        🧠 MACHINE LEARNING   🔥 DEEP LEARNING     💬 NLP
+              │                    │                    │
+        Prediction             CNNs                LLMs
+        Classification         RNNs                RAG
+        Recommendation         Transformers        Embeddings
+        Clustering             Transfer Learning    Chatbots
+              │                    │                    │
+              └────────────────────┼────────────────────┘
+                                   │
+                                   ▼
+                         👁️ COMPUTER VISION
+                                   │
+                     ┌─────────────┼─────────────┐
+                     │             │             │
+                  OpenCV       MediaPipe     Image AI
+                     │             │             │
+                     └─────────────┼─────────────┘
+                                   ▼
+                         🚀 INTELLIGENT
+                            APPLICATIONS
 ```
 
 ---
 
-## 🛠️ Technologies
+# ⚡ What I Build
 
-### Programming
+I like working on projects where multiple technologies come together.
 
-`Python` `C` `C++` `JavaScript`
+### 🤖 AI Applications
 
-### AI / ML
+Intelligent applications that use machine learning or AI to solve practical problems.
 
-`Scikit-learn` `TensorFlow` `NumPy` `Pandas`
+### 🧠 ML Systems
 
-### Deep Learning
+Prediction, classification, recommendation, anomaly detection, and decision-support systems.
 
-`CNNs` `Transformers` `Neural Networks` `Transfer Learning`
+### 👁️ Vision Systems
 
-### NLP
+Applications that allow computers to understand images, faces, gestures, and visual information.
 
-`LangChain` `Sentence Transformers` `RAG` `Embeddings` `ChromaDB`
+### 💬 Language AI
 
-### Computer Vision
+NLP applications involving:
 
-`OpenCV` `MediaPipe` `Image Processing` `Object Detection`
+* LLMs
+* RAG
+* Semantic Search
+* Embeddings
+* Question Answering
+* AI Assistants
 
-### Web Development
+### 🌐 AI + Web
 
-`HTML` `CSS` `JavaScript` `React` `Next.js` `Tailwind CSS`
-
-### Backend & Database
-
-`FastAPI` `MySQL` `SQLite` `Supabase`
+I also enjoy turning AI models into usable applications through modern web interfaces and APIs.
 
 ---
 
-# 🎬 Interactive Introduction
+# 🔬 Research Interests
 
-The portfolio includes an **intro video** where I introduce myself, my interests, and my journey into technology.
+I am particularly interested in exploring:
 
-> 🎥 *"This is where my journey into AI begins..."*
+```text
+Edge AI
+   │
+   ├── Efficient AI
+   ├── Model Compression
+   └── On-device Intelligence
+             │
+             ▼
+Explainable AI
+   │
+   ├── Model Interpretability
+   ├── Explainable Predictions
+   └── Trustworthy AI
+             │
+             ▼
+Computer Vision
+   │
+   ├── Image Understanding
+   ├── Remote Sensing
+   └── Visual Intelligence
+             │
+             ▼
+Generative AI
+   │
+   ├── LLMs
+   ├── RAG
+   └── AI Agents
+```
+
+---
+
+# 🧪 My AI Laboratory
+
+Not every idea becomes a project.
+
+Some become experiments.
+
+This section represents my **experimental work**.
+
+### 🔬 Experiments
+
+* Testing different ML algorithms
+* Comparing model performance
+* Dataset preprocessing
+* Computer vision experiments
+* NLP experiments
+* RAG pipelines
+* AI assistant prototypes
+* Deep learning experiments
+* Model optimization
+
+### 🔁 My Experiment Cycle
+
+```text
+        IDEA
+         ↓
+      DATASET
+         ↓
+    PREPROCESSING
+         ↓
+      BASELINE
+         ↓
+     EXPERIMENT
+         ↓
+     EVALUATION
+         ↓
+    OPTIMIZATION
+         ↓
+     DEPLOYMENT
+         ↓
+      LEARNING
+         ↺
+```
 
 ---
 
 # 🚀 Featured Projects
 
-## 🤖 AI / Machine Learning
-
-Projects involving prediction, classification, recommendation systems, and intelligent decision-making.
+## 🤖 AI / ML
 
 ### 🍽️ Restaurant Rating Prediction
 
-A machine learning system that predicts restaurant ratings using multiple ML algorithms and compares their performance.
+Machine learning system for predicting restaurant ratings.
 
-**Models explored:**
-
-* Linear Regression
-* Decision Tree
-* Random Forest
-
----
-
-## 🧠 Deep Learning
-
-Projects exploring neural networks and modern deep-learning techniques.
-
-Topics include:
-
-* CNN
-* Image Classification
-* Transfer Learning
-* Neural Networks
-* Transformers
-
----
-
-## 💬 Natural Language Processing
-
-Exploring how machines understand and process human language.
-
-Projects and experiments include:
-
-* RAG systems
-* Document question answering
-* Text embeddings
-* Semantic search
-* AI chatbots
-* Local-language AI applications
+**Tech:** Python • Pandas • Scikit-learn • Random Forest • Streamlit
 
 ---
 
 ## 👁️ Computer Vision
 
-Building systems that allow computers to understand images and visual information.
+### 🎯 Vision-Based Applications
 
-Areas explored:
+Experiments and projects involving:
 
-* Face Detection
-* Facial Landmarks
-* Gesture Recognition
-* Image Classification
-* Human Pose / Landmark Detection
-* Visual AI applications
+* Face landmarks
+* Gesture recognition
+* Image classification
+* Human activity understanding
+* Visual interaction
+
+**Tech:** Python • OpenCV • MediaPipe • Deep Learning
 
 ---
 
-# 🧪 AI Experiments
+## 💬 NLP / RAG
 
-This section contains smaller experiments where I test ideas before turning them into complete projects.
+### 📚 Intelligent Document Assistant
+
+Exploring how documents can be transformed into searchable knowledge using:
+
+`Embeddings → Vector Database → Retrieval → LLM → Answer`
+
+**Tech:** Python • LangChain • Sentence Transformers • ChromaDB
+
+---
+
+# 🛰️ AI + Real World
+
+One of my major interests is applying AI outside of simple demos.
+
+Areas I want to explore:
+
+| Domain                 | AI Application                |
+| ---------------------- | ----------------------------- |
+| 🌾 Agriculture         | Crop Monitoring               |
+| 🛰️ Remote Sensing     | Satellite Image Analysis      |
+| 🌧️ Environment        | Weather & Rainfall Prediction |
+| 🚑 Disaster Management | Intelligent Rescue Systems    |
+| 🏥 Healthcare          | AI-assisted Monitoring        |
+| 🤖 Robotics            | Autonomous Systems            |
+| 🛡️ Security           | Intelligent Detection Systems |
+
+---
+
+# 🏆 Achievements & Activities
+
+* 🏅 Participated in national-level technical competitions
+* 🚀 Hackathon participant
+* 🛰️ Bharat Antariksh Hackathon participant
+* 🤝 Open-source contributor
+* 🔬 Exploring research and technical publications
+* 🎓 Computer Science & AI/ML student
+
+---
+
+# 🛠️ Technology Stack
+
+### Languages
 
 ```text
-Experiment → Prototype → Testing → Improvement → Project
+Python    ████████████████████
+C++       ███████████████
+C         ████████████
+JavaScript █████████████
 ```
 
-Some experiments include:
+### AI / Data
 
-* AI assistants
-* Computer vision prototypes
-* NLP experiments
-* ML model comparisons
-* Dataset exploration
-* AI-powered web applications
+`Python` `NumPy` `Pandas` `Scikit-learn`
+
+### Deep Learning
+
+`TensorFlow` `CNN` `Transformers` `Neural Networks`
+
+### NLP / GenAI
+
+`LangChain` `Sentence Transformers` `RAG` `ChromaDB`
+
+### Computer Vision
+
+`OpenCV` `MediaPipe`
+
+### Web
+
+`HTML` `CSS` `JavaScript` `React` `Next.js` `Tailwind`
+
+### Backend
+
+`FastAPI` `MySQL` `SQLite` `Supabase`
+
+### Tools
+
+`Git` `GitHub` `VS Code` `Google Colab` `Kaggle`
 
 ---
 
-# 🎓 Academics
+# 📈 Skill Growth
 
-My academic journey includes coursework and practical learning in:
+Instead of thinking of skills as something I have "finished", I see them as continuously improving.
+
+```text
+                    NOW
+                     │
+                     ▼
+              ┌─────────────┐
+              │ Programming │
+              └──────┬──────┘
+                     ▼
+              ┌─────────────┐
+              │     ML      │
+              └──────┬──────┘
+                     ▼
+              ┌─────────────┐
+              │     DL      │
+              └──────┬──────┘
+                     ▼
+          ┌──────────┴──────────┐
+          ▼                     ▼
+        NLP                     CV
+          │                     │
+          └──────────┬──────────┘
+                     ▼
+                Generative AI
+                     │
+                     ▼
+                 AI Agents
+                     │
+                     ▼
+              AI Research 🚀
+```
+
+---
+
+# 🎓 Academic Journey
+
+### Computer Science
 
 * Data Structures & Algorithms
 * Operating Systems
-* Database Management Systems
-* Deep Learning
+* DBMS
+* Computer Networks
 * Java
 * Microprocessors
 * Formal Languages & Automata
+
+### Artificial Intelligence
+
 * Machine Learning
-* Computer Science Fundamentals
-
----
-
-# 📝 Assignments & Research
-
-A collection of academic assignments, research explorations, technical reports, and experiments.
-
-Topics explored include:
-
-* Edge AI
-* Explainable AI
-* IoMT
-* Transformers
+* Deep Learning
 * Computer Vision
-* Machine Learning
-* Artificial Intelligence
-
----
-
-# 🖼️ Gallery
-
-A visual collection of:
-
-📸 Projects
-🏆 Competitions
-💻 Hackathons
-🎓 College Events
-🤝 Team Activities
-📚 Learning Experiences
+* Natural Language Processing
+* Generative AI
+* Research Methodology
 
 ---
 
 # 📚 Currently Learning
 
-My learning roadmap is continuously evolving.
+### 🔥 Deep Learning
+
+Understanding how neural networks actually learn rather than only using pre-built models.
+
+### 💬 NLP & LLMs
+
+Exploring:
+
+`Transformers → Embeddings → RAG → Agents`
+
+### 👁️ Computer Vision
+
+Exploring visual intelligence using:
+
+`OpenCV → CNN → Detection → Vision Models`
+
+### 🛰️ Remote Sensing
+
+Learning how AI can extract useful information from satellite and geospatial data.
+
+### 🔬 Research
+
+Learning how to convert technical ideas into:
+
+`Problem → Literature Review → Methodology → Experiment → Results → Research Paper`
+
+---
+
+# 🌱 My Learning Philosophy
 
 ```text
-Python
-   ↓
-Machine Learning
-   ↓
-Deep Learning
-   ↓
-Computer Vision ─────┐
-                     ├──► Intelligent Systems
-NLP / LLMs ──────────┤
-                     │
-RAG / Agents ────────┘
+              DON'T JUST
+                 ↓
+              USE AI
+                 ↓
+          ┌───────────────┐
+          │ Understand It │
+          └───────┬───────┘
+                  ↓
+             Experiment
+                  ↓
+                Build
+                  ↓
+               Break
+                  ↓
+               Debug
+                  ↓
+              Improve
+                  ↓
+               Repeat
 ```
 
-Currently exploring:
+> **Every project is an experiment.
+> Every error is a lesson.
+> Every experiment moves me forward.**
 
-* Advanced Machine Learning
+---
+
+# 🗺️ Future Roadmap
+
+```text
+✅ Programming Fundamentals
+        ↓
+✅ Machine Learning
+        ↓
+🔄 Deep Learning
+        ↓
+🔄 Computer Vision
+        ↓
+🔄 NLP / LLMs
+        ↓
+🔄 RAG & AI Agents
+        ↓
+⬜ Edge AI
+        ↓
+⬜ Robotics
+        ↓
+⬜ Remote Sensing + AI
+        ↓
+⬜ Advanced AI Research
+```
+
+---
+
+# 💡 Things I Want To Build
+
+Some ideas on my long-term roadmap:
+
+* 🤖 Personal AI Assistant
+* 🛰️ Satellite Image Intelligence System
+* 🚁 Autonomous Disaster-Response Systems
+* 👁️ Advanced Computer Vision Applications
+* 🧠 Edge AI Systems
+* 💬 Multilingual AI Assistant
+* 📚 Research-oriented RAG systems
+* 🌍 AI for environmental monitoring
+
+---
+
+# 🤝 Let's Collaborate
+
+I'm interested in collaborating on:
+
+* AI/ML projects
 * Deep Learning
-* Generative AI
-* NLP & LLMs
-* RAG
-* AI Agents
 * Computer Vision
-* Research & Paper Writing
+* NLP
+* Generative AI
+* Open Source
+* Hackathons
+* Research projects
+* Robotics
+* Remote Sensing
+
+If you have an interesting idea, let's build it. 🚀
 
 ---
 
-# 🌱 My Philosophy
+# 📬 Connect With Me
 
-> **Learn → Build → Break → Debug → Improve → Repeat**
+📧 **Email:** `your-email@gmail.com`
 
-I believe the best way to learn technology is not only by studying concepts, but by **building things, experimenting with ideas, making mistakes, and improving continuously.**
+💻 **GitHub:** `github.com/yourusername`
 
----
-
-# 📊 Portfolio Highlights
-
-| Area        | Focus                          |
-| ----------- | ------------------------------ |
-| 🤖 AI       | Intelligent Systems            |
-| 🧠 ML       | Prediction & Classification    |
-| 🔥 DL       | Neural Networks & Transformers |
-| 💬 NLP      | LLMs, RAG & Language AI        |
-| 👁️ CV      | Image & Vision Intelligence    |
-| 🌐 Web      | Interactive AI Applications    |
-| 📚 Research | Emerging AI Technologies       |
+🔗 **LinkedIn:** `linkedin.com/in/yourprofile`
 
 ---
 
-# 📬 Let's Connect
+# ⭐ Final Thought
 
-Interested in AI, research, projects, or collaboration?
+```text
+                     ┌───────────────┐
+                     │     LEARN     │
+                     └───────┬───────┘
+                             ↓
+                     ┌───────────────┐
+                     │    EXPLORE    │
+                     └───────┬───────┘
+                             ↓
+                     ┌───────────────┐
+                     │     BUILD     │
+                     └───────┬───────┘
+                             ↓
+                     ┌───────────────┐
+                     │    RESEARCH   │
+                     └───────┬───────┘
+                             ↓
+                     ┌───────────────┐
+                     │    INNOVATE   │
+                     └───────────────┘
+```
 
-**Email:** Add your Gmail here
-**GitHub:** Add your GitHub here
-**LinkedIn:** Add your LinkedIn here
+### 🚀 This is not the final version of my portfolio.
 
----
-
-## ⭐ Final Note
-
-This portfolio is continuously evolving.
-
-New projects.
-New experiments.
-New technologies.
-New ideas.
-
-**The journey has just started. 🚀**
-
----
-
-### Built With
-
-`HTML` • `CSS` • `JavaScript` • ❤️ • Curiosity
+**It is a live record of my journey into AI.**

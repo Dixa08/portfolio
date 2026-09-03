@@ -59,7 +59,7 @@ RAG • Embeddings • AI Assistants
 OpenCV • MediaPipe • Image AI
 
 **🌐 AI + Web**
-Turning ML models into usable applications
+Turning ML models into usable applications,dl concept
 
 ---
 

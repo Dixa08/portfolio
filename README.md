@@ -88,6 +88,7 @@ Turning ML models into usable applications,dl concept
 🟢 **Deep Learning**
 🟡 **NLP / LLMs**
 🟡 **Computer Vision**
+🟡 **rag**
 🟡 **Research**
 
 > 🟢 Comfortable • 🟡 Exploring • 🔵 Next

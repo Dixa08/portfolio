@@ -19,7 +19,7 @@
 I enjoy **learning by building projects** and exploring how AI can solve real-world problems.
 
 ```text
-🤖 AI/ML     👁️ Computer Vision     💬 NLP
+🤖 AI/ML/DL/transformer/agentic ai    👁️ Computer Vision     💬 NLP  
      ↘              ↓              ↙
              🚀 Projects
 ```
